@@ -1,0 +1,69 @@
+# Fichiers de dépendances Node.js (communs au frontend et backend)
+# Les dossiers 'node_modules' sont généralement volumineux et doivent être ignorés.
+node_modules/
+
+# Logs de NPM / Yarn
+npm-debug.log*
+yarn-error.log
+.npm/
+.yarn/
+
+# Environnements virtuels (si des outils Python ou autres sont ajoutés au projet)
+.venv/
+env/
+venv/
+
+# Fichiers d'environnement sensibles
+# ---------------------------------
+# C'est CRUCIAL si vous stockez des clés API, identifiants de base de données, etc.
+# Si votre fichier 'backend/data/user.json' contient des données SENSIBLES
+# (ex: mots de passe, clés secrètes) qui ne doivent PAS être sur GitHub,
+# DÉCOMMENTEZ la ligne ci-dessous :
+# backend/data/user.json
+#
+# Pour les fichiers .env qui contiennent des variables d'environnement (secrets, URLs de DB)
+.env
+.env.*
+!.env.example # Permet de versionner un fichier .env.example vide comme template
+
+# Fichiers de build du Frontend (Vite/React)
+# ----------------------------------------
+frontend/dist/           # Le dossier de sortie de la build de Vite
+frontend/.vite/          # Fichiers temporaires/cache de Vite
+frontend/.env.local
+frontend/.env.*.local
+
+# Fichiers de build du Backend (si des artefacts de build sont générés, ex: transpilation)
+# ----------------------------------------------------------------------------------
+backend/dist/
+backend/build/
+
+# Fichiers spécifiques au système d'exploitation et aux IDE
+# -------------------------------------------------------
+.DS_Store                # macOS
+Thumbs.db                # Windows
+ehthumbs.db              # Windows
+Desktop.ini              # Windows
+
+# Fichiers spécifiques aux IDE (Integrated Development Environments)
+.idea/                   # Dossiers d'IDE JetBrains (IntelliJ, WebStorm, PhpStorm, etc.)
+.vscode/                 # Dossiers de VS Code
+*.sublime-project        # Sublime Text
+*.sublime-workspace      # Sublime Text
+
+# Fichiers temporaires et de sauvegarde
+# ------------------------------------
+*~                       # Fichiers de sauvegarde de certains éditeurs
+*.bak                    # Fichiers de sauvegarde
+*.swp                    # Fichiers de swap de Vim
+*.swo                    # Fichiers de swap de Vim
+
+# Fichiers de log généraux
+# -----------------------
+*.log
+logs/                    # Un dossier 'logs' s'il est créé
+
+# Fichiers de couverture de test (si vous utilisez des outils comme Jest, Vitest, Cypress)
+# -------------------------------------------------------------------------------------
+coverage/
+.nyc_output/
