@@ -6,21 +6,17 @@ export default function GetAllCharacters() {
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  // Nouvel état pour le personnage sélectionné et l'affichage de la modale
   const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   useEffect(() => {
     const fetchCharacters = async () => {
       try {
         const response = await fetch('http://localhost:5000/characters');
-        
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
         const data = await response.json();
         setCharacters(data);
-        
       } catch (err) {
         console.error("Error fetching characters:", err);
         setError(err.message);
@@ -28,12 +24,11 @@ export default function GetAllCharacters() {
         setLoading(false);
       }
     };
-
     fetchCharacters();
   }, []);
 
   const handleCardClick = (character) => {
-    setSelectedCharacter(character); 
+    setSelectedCharacter(character);
   };
 
   const closeDetails = () => {
@@ -43,7 +38,6 @@ export default function GetAllCharacters() {
   const handleImageError = (e) => {
     e.target.style.backgroundImage = `url(https://placehold.co/400x300/1a1a1a/e00?text=IMAGE_ERROR&font=roboto&bold)`;
   };
-
 
   if (loading) {
     return (
@@ -66,15 +60,15 @@ export default function GetAllCharacters() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {characters.length > 0 ? (
           characters.map(c => (
-            <div 
-              key={c.id} 
+            <div
+              key={c.id}
               onClick={() => handleCardClick(c)}
               className="group bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-0 border border-gray-700 flex flex-col items-center text-center transform hover:-translate-y-2 hover:scale-105 relative overflow-hidden cursor-pointer"
             >
-              <div 
+              <div
                 className="w-full h-48 bg-cover bg-center rounded-t-xl relative"
                 style={{ backgroundImage: `url(${c.image})` }}
-                onError={handleImageError} 
+                onError={handleImageError}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-300"></div>
               </div>
