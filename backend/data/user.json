@@ -4,55 +4,196 @@
       "id": 1,
       "name": "Spider-Man",
       "realName": "Peter Parker",
-      "universe": "Earth-616"
+      "universe": "Marvel",
+      "description": "Le sympathique justicier du quartier avec des pouvoirs arachnéens.",
+      "image": "data:image/jpeg;base64,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",
+      "stats": {
+        "strength": 80,
+        "intelligence": 90,
+        "speed": 85
+      }
     },
     {
       "id": 2,
       "name": "Iron Man",
       "realName": "Tony Stark",
-      "universe": "Earth-616"
+      "universe": "Marvel",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5S0I7PmC6u28lQJ6Q4QNmKFwOnW1GaOOikA&s",
+      "description": "Génie milliardaire et playboy, il combat le crime dans son armure.",
+      "stats": {
+        "strength": 90,
+        "intelligence": 100,
+        "speed": 75
+      }
     },
     {
       "id": 3,
-      "name": "Captain America",
-      "realName": "Steve Rogers",
-      "universe": "Earth-616"
+      "name": "Black Panther",
+      "realName": "T'Challa",
+      "universe": "Marvel",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Black_Panther_OS_Vol_1_2.png",
+      "description": "Roi du Wakanda et guerrier redoutable, protégé par l'armure en vibranium.",
+      "stats": {
+        "strength": 88,
+        "intelligence": 95,
+        "speed": 90
+      }
     },
     {
       "id": 4,
-      "name": "Black Widow",
-      "realName": "Natasha Romanoff",
-      "universe": "Earth-616"
+      "name": "Captain Marvel",
+      "realName": "Carol Danvers",
+      "universe": "Marvel",
+      "image": "https://www.baltana.com/files/wallpapers-16/4K-Carol-Danvers-Captain-Marvel-Background-HD-Wallpapers-39930.jpg",
+      "description": "Élue du Kree et héroïne cosmique, dotée de pouvoirs immenses.",
+      "stats": {
+        "strength": 95,
+        "intelligence": 85,
+        "speed": 90
+      }
     },
     {
       "id": 5,
-      "name": "Black Panther",
-      "realName": "T'Challa",
-      "universe": "Earth-616"
+      "name": "Doctor Strange",
+      "realName": "Stephen Strange",
+      "universe": "Marvel",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb_ZAObjKbbWDb__sRpOUGEiX-hPD_UtX7Jw&s",
+      "description": "Ancien chirurgien devenu Sorcier Suprême, maître des arts mystiques.",
+      "stats": {
+        "strength": 60,
+        "intelligence": 98,
+        "speed": 70
+      }
     },
     {
       "id": 6,
-      "name": "Doctor Strange",
-      "realName": "Stephen Strange",
-      "universe": "Earth-616"
+      "name": "Hulk",
+      "realName": "Bruce Banner",
+      "universe": "Marvel",
+      "image": "https://wallpapers.com/images/high/4k-hulk-marvel-super-war-wpaqv8lyemtuaeh6.webp",
+      "description": "Scientifique transformé en monstre surpuissant par les rayons gamma.",
+      "stats": {
+        "strength": 100,
+        "intelligence": 70,
+        "speed": 80
+      }
     },
     {
       "id": 7,
-      "name": "Scarlet Witch",
-      "realName": "Wanda Maximoff",
-      "universe": "Earth-616"
+      "name": "Thor",
+      "realName": "Thor Odinson",
+      "universe": "Marvel",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-mfCzgmpbil4XLWBgUUNcKTu6vLyiMdibQ&s",
+      "description": "Dieu du tonnerre brandissant Mjolnir, redoutable et divin.",
+      "stats": {
+        "strength": 95,
+        "intelligence": 70,
+        "speed": 75
+      }
     },
     {
       "id": 8,
-      "name": "Hulk",
-      "realName": "Bruce Banner",
-      "universe": "Earth-616"
+      "name": "Scarlet Witch",
+      "realName": "Wanda Maximoff",
+      "universe": "Marvel",
+      "image": "https://images.alphacoders.com/106/thumb-1920-1065270.jpg",
+      "description": "Mutante puissante avec la capacité de manipuler la réalité.",
+      "stats": {
+        "strength": 75,
+        "intelligence": 85,
+        "speed": 70
+      }
     },
     {
-      "id": 1754678233533,
-      "name": "Thor",
-      "realName": "Thor ",
-      "universe": "Asgard"
+      "id": 9,
+      "name": "Black Widow",
+      "realName": "Natasha Romanoff",
+      "universe": "Marvel",
+      "image": "https://m.media-amazon.com/images/I/414VvzdtyjL._SY445_SX342_.jpg",
+      "description": "Espionne et maître du combat, dotée d'une agilité et d'une intelligence hors pair.",
+      "stats": {
+        "strength": 70,
+        "intelligence": 85,
+        "speed": 80
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ant-Man",
+      "realName": "Scott Lang",
+      "universe": "Marvel",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNuhXF1wSzsI9pSKEQBNo3WJCsiRF7u-yTLw&s",
+      "description": "Capable de diminuer de taille tout en conservant sa force.",
+      "stats": {
+        "strength": 55,
+        "intelligence": 75,
+        "speed": 65
+      }
+    },
+    {
+      "id": 11,
+      "name": "Wolverine",
+      "realName": "Logan",
+      "universe": "Marvel",
+      "image": "https://images.hdqwalls.com/wallpapers/classic-wolverine-4k-t1.jpg",
+      "description": "Mutant doté d’une régénération exceptionnelle et de griffes létales.",
+      "stats": {
+        "strength": 85,
+        "intelligence": 60,
+        "speed": 70
+      }
+    },
+    {
+      "id": 12,
+      "name": "Deadpool",
+      "realName": "Wade Wilson",
+      "universe": "Marvel",
+      "image": "https://makemymag.com/wp-content/uploads/2024/02/Cine-saga-collection-1.jpg",
+      "description": "Mercenaire à la régénération surpuissante et à l'humour noir.",
+      "stats": {
+        "strength": 70,
+        "intelligence": 80,
+        "speed": 90
+      }
+    },
+    {
+      "id": 13,
+      "name": "Daredevil",
+      "realName": "Matt Murdock",
+      "universe": "Marvel",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/14/Daredevil_65.jpg",
+      "description": "Avocat aveugle le jour, justicier des rues la nuit, avec des sens surdéveloppés.",
+      "stats": {
+        "strength": 70,
+        "intelligence": 90,
+        "speed": 80
+      }
+    },
+    {
+      "id": 14,
+      "name": "Falcon",
+      "realName": "Sam Wilson",
+      "universe": "Marvel",
+      "image": "https://4kwallpapers.com/images/walls/thumbs_3t/5269.jpg",
+      "description": "Ancien militaire avec des ailes vibranium, fidèle allié de Captain America.",
+      "stats": {
+        "strength": 65,
+        "intelligence": 75,
+        "speed": 85
+      }
+    },
+    {
+      "id": 15,
+      "name": "Vision",
+      "realName": "Vision",
+      "universe": "Marvel",
+      "image": "https://wallpapers.com/images/hd/vision-avengers-5t7rvx2bh7kx8mwn.jpg",
+      "description": "Synthézoïde créé par Ultron et Stark, doté de l'esprit de Jarvis.",
+      "stats": {
+        "strength": 80,
+        "intelligence": 90,
+        "speed": 60
+      }
     }
   ]
 }

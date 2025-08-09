@@ -61,12 +61,15 @@ export default function GetAllCharacters() {
             >
               <div 
                 className="w-full h-48 bg-cover bg-center rounded-t-xl relative"
-                style={{ backgroundImage: `url(${getMarvelPlaceholder(c.name, c.id)})` }}
+                style={{ backgroundImage: `url(${c.image})` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-300"></div>
               </div>
 
               <div className="p-6 w-full relative z-10">
+              <h3 className="text-xl font-extrabold text-white mb-2 tracking-wide uppercase">
+                  #{c.id}
+                </h3>
                 <h3 className="text-3xl font-extrabold text-white mb-2 tracking-wide uppercase">
                   {c.name}
                 </h3>
