@@ -32,17 +32,14 @@ export default function GetAllCharacters() {
     fetchCharacters();
   }, []);
 
-  // Fonction pour gérer le clic sur une carte de personnage
   const handleCardClick = (character) => {
-    setSelectedCharacter(character); // Définit le personnage sélectionné
+    setSelectedCharacter(character); 
   };
 
-  // Fonction pour fermer la modale de détails
   const closeDetails = () => {
-    setSelectedCharacter(null); // Réinitialise le personnage sélectionné
+    setSelectedCharacter(null);
   };
 
-  // Fallback pour les images si elles ne se chargent pas
   const handleImageError = (e) => {
     e.target.style.backgroundImage = `url(https://placehold.co/400x300/1a1a1a/e00?text=IMAGE_ERROR&font=roboto&bold)`;
   };
@@ -71,21 +68,17 @@ export default function GetAllCharacters() {
           characters.map(c => (
             <div 
               key={c.id} 
-              // Au clic, appeler handleCardClick pour définir le personnage sélectionné
               onClick={() => handleCardClick(c)}
               className="group bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-0 border border-gray-700 flex flex-col items-center text-center transform hover:-translate-y-2 hover:scale-105 relative overflow-hidden cursor-pointer"
             >
-              {/* Image de fond avec un aspect film/comics */}
               <div 
                 className="w-full h-48 bg-cover bg-center rounded-t-xl relative"
                 style={{ backgroundImage: `url(${c.image})` }}
-                onError={handleImageError} // Gérer les erreurs de chargement d'image sur background-image
+                onError={handleImageError} 
               >
-                {/* Dégradé sur l'image pour la lisibilité du texte */}
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-300"></div>
               </div>
 
-              {/* Contenu de la carte */}
               <div className="p-6 w-full relative z-10">
                 <h3 className="text-xl font-extrabold text-white mb-2 tracking-wide uppercase">
                    #{c.id}
@@ -107,11 +100,11 @@ export default function GetAllCharacters() {
         )}
       </div>
 
-      {/* Modale d'affichage des détails du personnage */}
       {selectedCharacter && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-50 animate-fade-in">
+
           <div className="bg-gray-800 rounded-2xl shadow-2xl-custom p-6 md:p-8 relative w-full max-w-2xl transform scale-95 animate-scale-in">
-            {/* Bouton de fermeture de la modale */}
+
             <button
               onClick={closeDetails}
               className="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-3xl font-bold focus:outline-none z-20"
@@ -119,7 +112,6 @@ export default function GetAllCharacters() {
             >
               &times;
             </button>
-            {/* Afficher le HeroCardDetailed avec le personnage sélectionné */}
             <HeroCardDetailed hero={selectedCharacter} />
           </div>
         </div>
